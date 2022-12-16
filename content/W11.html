@@ -143,103 +143,44 @@ img.add_border {
         </header>
     <div id="tipue_search_content">HW << <a href='HW.html'>Previous</a> <a href='W15.html'>Next</a> >> W15<br /><h1>W11</h1>
 <p>hw</p>
-<table border="0" cellpadding="0" cellspacing="0">
-<tbody>
-<tr>
-<td class="gutter">
-<div class="line number1 index0 alt2">1</div>
-<div class="line number2 index1 alt1">2</div>
-<div class="line number3 index2 alt2">3</div>
-<div class="line number4 index3 alt1">4</div>
-<div class="line number5 index4 alt2">5</div>
-<div class="line number6 index5 alt1">6</div>
-<div class="line number7 index6 alt2">7</div>
-<div class="line number8 index7 alt1">8</div>
-<div class="line number9 index8 alt2">9</div>
-<div class="line number10 index9 alt1">10</div>
-<div class="line number11 index10 alt2">11</div>
-<div class="line number12 index11 alt1">12</div>
-<div class="line number13 index12 alt2">13</div>
-<div class="line number14 index13 alt1">14</div>
-<div class="line number15 index14 alt2">15</div>
-<div class="line number16 index15 alt1">16</div>
-<div class="line number17 index16 alt2">17</div>
-<div class="line number18 index17 alt1">18</div>
-<div class="line number19 index18 alt2">19</div>
-<div class="line number20 index19 alt1">20</div>
-<div class="line number21 index20 alt2">21</div>
-<div class="line number22 index21 alt1">22</div>
-<div class="line number23 index22 alt2">23</div>
-<div class="line number24 index23 alt1">24</div>
-<div class="line number25 index24 alt2">25</div>
-<div class="line number26 index25 alt1">26</div>
-<div class="line number27 index26 alt2">27</div>
-<div class="line number28 index27 alt1">28</div>
-<div class="line number29 index28 alt2">29</div>
-<div class="line number30 index29 alt1">30</div>
-<div class="line number31 index30 alt2">31</div>
-<div class="line number32 index31 alt1">32</div>
-<div class="line number33 index32 alt2">33</div>
-<div class="line number34 index33 alt1">34</div>
-<div class="line number35 index34 alt2">35</div>
-<div class="line number36 index35 alt1">36</div>
-<div class="line number37 index36 alt2">37</div>
-<div class="line number38 index37 alt1">38</div>
-<div class="line number39 index38 alt2">39</div>
-<div class="line number40 index39 alt1">40</div>
-<div class="line number41 index40 alt2">41</div>
-<div class="line number42 index41 alt1">42</div>
-</td>
-<td class="code">
-<div class="container">
-<div class="line number1 index0 alt2"><code class="py keyword">import</code> <code class="py plain">ast</code></div>
+<div class="line number1 index0 alt2"><code class="py keyword">import</code><span> </span><code class="py plain">ast</code></div>
 <div class="line number2 index1 alt1"><code class="py spaces"> </code> </div>
 <div class="line number3 index2 alt2"><code class="py comments"># get stud_list first</code></div>
 <div class="line number4 index3 alt1"><code class="py spaces"> </code> </div>
-<div class="line number5 index4 alt2"><code class="py keyword">def</code> <code class="py plain">get_stud(c_name):</code></div>
-<div class="line number6 index5 alt1"><code class="py spaces">    </code><code class="py plain">courses </code><code class="py keyword">=</code> <code class="py plain">{</code><code class="py string">"1a"</code><code class="py plain">: </code><code class="py string">"0747"</code><code class="py plain">, </code><code class="py string">"1b"</code><code class="py plain">: </code><code class="py string">"0761"</code><code class="py plain">, </code><code class="py string">"2a"</code><code class="py plain">: </code><code class="py string">"0773"</code><code class="py plain">, </code><code class="py string">"2b"</code><code class="py plain">: </code><code class="py string">"0786"</code><code class="py plain">}</code></div>
-<div class="line number7 index6 alt2"><code class="py spaces">    </code><code class="py plain">c </code><code class="py keyword">=</code> <code class="py plain">courses[c_name]</code></div>
-<div class="line number8 index7 alt1"><code class="py spaces">    </code><code class="py plain">url </code><code class="py keyword">=</code> <code class="py string">"https://nfu.cycu.org/?semester=1111&amp;courseno="</code> <code class="py keyword">+</code> <code class="py plain">c </code><code class="py keyword">+</code> <code class="py string">"&amp;column=True"</code></div>
-<div class="line number9 index8 alt2"><code class="py spaces">    </code><code class="py plain">data </code><code class="py keyword">=</code> <code class="py functions">open</code><code class="py plain">(url).read().split(</code><code class="py string">"\n"</code><code class="py plain">)</code></div>
-<div class="line number10 index9 alt1"><code class="py spaces">    </code><code class="py plain">stud </code><code class="py keyword">=</code> <code class="py plain">data[:</code><code class="py keyword">-</code><code class="py value">1</code><code class="py plain">]</code></div>
-<div class="line number11 index10 alt2"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">stud</code></div>
-<div class="line number12 index11 alt1"><code class="py spaces">     </code> </div>
-<div class="line number13 index12 alt2"><code class="py plain">cp_stud </code><code class="py keyword">=</code> <code class="py plain">get_stud(</code><code class="py string">"1a"</code><code class="py plain">)</code></div>
-<div class="line number14 index13 alt1"><code class="py spaces"> </code> </div>
-<div class="line number15 index14 alt2"><code class="py comments"># get w10 quiz result</code></div>
-<div class="line number16 index15 alt1"><code class="py plain">cp_w10_quiz_url </code><code class="py keyword">=</code> <code class="py string">"https://gist.githubusercontent.com/mdecycu/9df4b372ac1b7386cf259ced15f1a2b2/raw/9e8bf693a2805631aa12992db4d4f23e0f64e868/2022_1112_cp1a_w10_quiz.json"</code></div>
-<div class="line number17 index16 alt2"><code class="py spaces"> </code> </div>
-<div class="line number18 index17 alt1"><code class="py keyword">def</code> <code class="py plain">get_score(url):</code></div>
-<div class="line number19 index18 alt2"><code class="py spaces">    </code><code class="py plain">json_data </code><code class="py keyword">=</code> <code class="py functions">open</code><code class="py plain">(url).read()</code></div>
-<div class="line number20 index19 alt1"><code class="py spaces">    </code><code class="py plain">big_dict </code><code class="py keyword">=</code> <code class="py plain">ast.literal_eval(json_data)</code></div>
-<div class="line number21 index20 alt2"><code class="py spaces">    </code><code class="py plain">data </code><code class="py keyword">=</code> <code class="py plain">big_dict[</code><code class="py string">"body"</code><code class="py plain">][</code><code class="py string">"testuser"</code><code class="py plain">]</code></div>
-<div class="line number22 index21 alt1"><code class="py spaces">    </code><code class="py plain">quiz_dict </code><code class="py keyword">=</code> <code class="py plain">{}</code></div>
-<div class="line number23 index22 alt2"><code class="py spaces">    </code><code class="py keyword">for</code> <code class="py plain">i </code><code class="py keyword">in</code> <code class="py plain">data:</code></div>
-<div class="line number24 index23 alt1"><code class="py spaces">        </code><code class="py plain">stud_id </code><code class="py keyword">=</code> <code class="py plain">data[i][</code><code class="py string">"user_name"</code><code class="py plain">]</code></div>
-<div class="line number25 index24 alt2"><code class="py spaces">        </code><code class="py plain">stud_score </code><code class="py keyword">=</code> <code class="py functions">int</code><code class="py plain">(</code><code class="py functions">float</code><code class="py plain">(data[i][</code><code class="py string">"total_score"</code><code class="py plain">]))</code></div>
-<div class="line number26 index25 alt1"><code class="py spaces">        </code><code class="py plain">quiz_dict[stud_id] </code><code class="py keyword">=</code> <code class="py plain">stud_score</code></div>
-<div class="line number27 index26 alt2"><code class="py spaces">    </code><code class="py keyword">return</code> <code class="py plain">quiz_dict</code></div>
-<div class="line number28 index27 alt1"><code class="py spaces">     </code> </div>
-<div class="line number29 index28 alt2"><code class="py plain">cp_quiz </code><code class="py keyword">=</code> <code class="py plain">get_score(cp_w10_quiz_url)</code></div>
-<div class="line number30 index29 alt1"><code class="py plain">cp_abs </code><code class="py keyword">=</code> <code class="py plain">[]</code></div>
-<div class="line number31 index30 alt2"><code class="py keyword">for</code> <code class="py plain">stud </code><code class="py keyword">in</code> <code class="py plain">cp_stud:</code></div>
-<div class="line number32 index31 alt1"><code class="py spaces">    </code><code class="py keyword">try</code><code class="py plain">:</code></div>
-<div class="line number33 index32 alt2"><code class="py spaces">        </code><code class="py functions">print</code><code class="py plain">(stud, cp_quiz[stud])</code></div>
-<div class="line number34 index33 alt1"><code class="py spaces">    </code><code class="py keyword">except</code><code class="py plain">:</code></div>
-<div class="line number35 index34 alt2"><code class="py spaces">        </code><code class="py comments"># 缺考者沒有 quiz 成績</code></div>
-<div class="line number36 index35 alt1"><code class="py spaces">        </code><code class="py functions">print</code><code class="py plain">(stud, </code><code class="py string">"缺"</code><code class="py plain">)</code></div>
-<div class="line number37 index36 alt2"><code class="py spaces">        </code><code class="py plain">cp_abs.append(stud)</code></div>
+<div class="line number5 index4 alt2"><code class="py keyword">def</code><span> </span><code class="py plain">get_stud(c_name):</code></div>
+<div class="line number6 index5 alt1"><code class="py plain">courses<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">{</code><code class="py string">"1a"</code><code class="py plain">:<span> </span></code><code class="py string">"0747"</code><code class="py plain">,<span> </span></code><code class="py string">"1b"</code><code class="py plain">:<span> </span></code><code class="py string">"0761"</code><code class="py plain">,<span> </span></code><code class="py string">"2a"</code><code class="py plain">:<span> </span></code><code class="py string">"0773"</code><code class="py plain">,<span> </span></code><code class="py string">"2b"</code><code class="py plain">:<span> </span></code><code class="py string">"0786"</code><code class="py plain">}</code></div>
+<div class="line number6 index5 alt1"><code class="py plain">c<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">courses[c_name]</code></div>
+<div class="line number8 index7 alt1"><code class="py plain">url<span> </span></code><code class="py keyword">=</code><span> </span><code class="py string">"https://nfu.cycu.org/?semester=1111&amp;courseno="</code><span> </span><code class="py keyword">+</code><span> </span><code class="py plain">c<span> </span></code><code class="py keyword">+</code><span> </span><code class="py string">"&amp;column=True"</code></div>
+<div class="line number9 index8 alt2"><code class="py plain">data<span> </span></code><code class="py keyword">=</code><span> </span><code class="py functions">open</code><code class="py plain">(url).read().split(</code><code class="py string">"\n"</code><code class="py plain">)</code></div>
+<div class="line number10 index9 alt1"><code class="py plain">stud<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">data[:</code><code class="py keyword">-</code><code class="py value">1</code><code class="py plain">]</code></div>
+<div class="line number11 index10 alt2"><code class="py keyword">return</code><span> </span><code class="py plain">stud</code></div>
+<div class="line number12 index11 alt1"><code class="py plain">cp_stud<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">get_stud(</code><code class="py string">"1a"</code><code class="py plain">)</code></div>
+<div class="line number14 index13 alt1"><code class="py comments"># get w10 quiz result</code></div>
+<div class="line number16 index15 alt1"><code class="py plain">cp_w10_quiz_url<span> </span></code><code class="py keyword">=</code><span> </span><code class="py string">"https://gist.githubusercontent.com/mdecycu/9df4b372ac1b7386cf259ced15f1a2b2/raw/9e8bf693a2805631aa12992db4d4f23e0f64e868/2022_1112_cp1a_w10_quiz.json"</code></div>
+<div class="line number16 index15 alt1"><code class="py keyword">def</code><span> </span><code class="py plain">get_score(url):</code></div>
+<div class="line number19 index18 alt2"><code class="py plain">json_data<span> </span></code><code class="py keyword">=</code><span> </span><code class="py functions">open</code><code class="py plain">(url).read()</code></div>
+<div class="line number20 index19 alt1"><code class="py plain">big_dict<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">ast.literal_eval(json_data)</code></div>
+<div class="line number21 index20 alt2"><code class="py plain">data<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">big_dict[</code><code class="py string">"body"</code><code class="py plain">][</code><code class="py string">"testuser"</code><code class="py plain">]</code></div>
+<div class="line number22 index21 alt1"><code class="py plain">quiz_dict<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">{}</code></div>
+<div class="line number23 index22 alt2"><code class="py keyword">for</code><span> </span><code class="py plain">i<span> </span></code><code class="py keyword">in</code><span> </span><code class="py plain">data:</code></div>
+<div class="line number24 index23 alt1"><code class="py plain">stud_id<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">data[i][</code><code class="py string">"user_name"</code><code class="py plain">]</code></div>
+<div class="line number25 index24 alt2"><code class="py plain">stud_score<span> </span></code><code class="py keyword">=</code><span> </span><code class="py functions">int</code><code class="py plain">(</code><code class="py functions">float</code><code class="py plain">(data[i][</code><code class="py string">"total_score"</code><code class="py plain">]))</code></div>
+<div class="line number26 index25 alt1"><code class="py plain">quiz_dict[stud_id]<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">stud_score</code></div>
+<div class="line number27 index26 alt2"><code class="py keyword">return</code><span> </span><code class="py plain">quiz_dict</code></div>
+<div class="line number28 index27 alt1"><code class="py plain">cp_quiz<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">get_score(cp_w10_quiz_url)</code></div>
+<div class="line number30 index29 alt1"><code class="py plain">cp_abs<span> </span></code><code class="py keyword">=</code><span> </span><code class="py plain">[]</code></div>
+<div class="line number31 index30 alt2"><code class="py keyword">for</code><span> </span><code class="py plain">stud<span> </span></code><code class="py keyword">in</code><span> </span><code class="py plain">cp_stud:</code></div>
+<div class="line number32 index31 alt1"><code class="py keyword">try</code><code class="py plain">:</code></div>
+<div class="line number33 index32 alt2"><code class="py functions">print</code><code class="py plain">(stud, cp_quiz[stud])</code></div>
+<div class="line number34 index33 alt1"><code class="py keyword">except</code><code class="py plain">:</code></div>
+<div class="line number35 index34 alt2"><code class="py comments"># 缺考者沒有 quiz 成績</code></div>
+<div class="line number35 index34 alt2"><code class="py functions">print</code><code class="py plain">(stud,<span> </span></code><code class="py string">"缺"</code><code class="py plain">)</code></div>
+<div class="line number37 index36 alt2"><code class="py plain">cp_abs.append(stud)</code></div>
 <div class="line number38 index37 alt1"><code class="py comments"># 列出缺考名單</code></div>
 <div class="line number39 index38 alt2"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"="</code><code class="py keyword">*</code><code class="py value">20</code><code class="py plain">)</code></div>
 <div class="line number40 index39 alt1"><code class="py functions">print</code><code class="py plain">(</code><code class="py string">"以下為 w10 缺考名單:"</code><code class="py plain">)</code></div>
-<div class="line number41 index40 alt2"><code class="py keyword">for</code> <code class="py plain">stud </code><code class="py keyword">in</code> <code class="py plain">cp_abs:</code></div>
-<div class="line number42 index41 alt1"><code class="py spaces">    </code><code class="py functions">print</code><code class="py plain">(stud)</code></div>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-<p></p><br />HW << <a href='HW.html'>Previous</a> <a href='W15.html'>Next</a> >> W15</div>
+<div class="line number41 index40 alt2"><code class="py keyword">for</code><span> </span><code class="py plain">stud<span> </span></code><code class="py keyword">in</code><span> </span><code class="py plain">cp_abs:</code></div>
+<div class="line number42 index41 alt1"><code class="py functions">print</code><code class="py plain">(stud)</code></div><br />HW << <a href='HW.html'>Previous</a> <a href='W15.html'>Next</a> >> W15</div>
         
     <!-- footer -->
       <div class="container">
